@@ -1,1 +1,7 @@
 {% extends 'base.html' %}
+{% block title %}About NextWord{% endblock %}
+{% block content %}
+<h1>What is NextWord?</h1>
+NextWord's purpose is to analyse how people's minds react immediately after a word or a group of words are shown to them. You can try it yourself if you like; simply go to the <a href="{{ url_for('root') }}">main page</a> and follow the instructions. If you're not interested in that, you can <a href="{{ url_for('results') }}">view the results</a> that NextWord has collected. You can also send feedback or suggest that words be added to the database using the <a href="{{ url_for('feedback') }}">feedback form</a>.
+<h1>Legal stuff</h1>
+{% endblock %}
