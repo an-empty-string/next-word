@@ -1,6 +1,9 @@
 <html>
     <head>
         <title>{% block title %}{% endblock %}</title>
+        <link rel="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/jquery.min.js') }} "></script>
     </head>
     <body>
         {% block content %}{% endblock %}
